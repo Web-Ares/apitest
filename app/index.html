@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+
+    <!-- site -->
+    <div class="site">
+        <form class="test">
+            <div>
+                <label for="url">URL:</label>
+                <input type="text" class="url" id="url" required>
+            </div>
+            <div>
+                <label for="method1">GET</label>
+                <input type="radio" id="method1" name="method" value="GET" checked>
+                <label for="method2">POST</label>
+                <input type="radio" id="method2" name="method" value="POST">
+            </div>
+
+            <div class="params">
+               <ul>
+               </ul>
+                <button class="btn params__add">Add parameter</button>
+            </div>
+
+            <div>
+                <button class="btn" type="submit">Test</button>
+            </div>
+
+        </form>
+
+        <div class="result"></div>
+
+    </div>
+    <!-- /site -->
+
+    <script src="js/vendors/jquery-2.2.1.min.js"></script>
+    <script src="js/index.min.js"></script>
+</body>
+</html>

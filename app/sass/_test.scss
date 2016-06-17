@@ -1,0 +1,38 @@
+.test {
+
+	>div {
+		padding: 10px;
+		@include flexbox;
+		@include align-items( center );
+	}
+
+	label {
+		margin-right: 10px;
+	}
+	input {
+		margin-right: 20px;
+		border: 1px solid #000;
+		height: 30px;
+		width: 200px;
+
+		&[type="radio"]{
+			width: auto;
+		}
+	}
+	.params {
+		display: block;
+
+		li{
+			padding: 10px;
+			@include flexbox;
+			@include align-items( center );
+
+		}
+
+		button {
+			height: 30px;
+			width: 200px;
+		}
+	}
+}
+
